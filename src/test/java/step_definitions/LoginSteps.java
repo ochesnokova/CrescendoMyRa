@@ -21,4 +21,9 @@ public class LoginSteps extends TestBase{
     public void loginToApp() {
        driver.findElement(By.name("sfdgdf")).click();
     }
+
+    @Given("^click red button$")
+    public void clickRedButton() throws Throwable {
+        driver.get("hello");
+    }
 }
