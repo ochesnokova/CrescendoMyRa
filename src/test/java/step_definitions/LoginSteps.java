@@ -13,7 +13,7 @@ public class LoginSteps extends TestBase{
     @Given("^launch home screen$")
     public void launchHomeScreen() throws Throwable {
 
-        driver.get("www.gooogle.com");
+        driver.get("www.google.com");
 
     }
 
