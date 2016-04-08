@@ -4,4 +4,6 @@
 public class Test {
 
     String string = "fsgsfdgg";
+
+    Webdriver driver = new FirefoxDriver();
 }
