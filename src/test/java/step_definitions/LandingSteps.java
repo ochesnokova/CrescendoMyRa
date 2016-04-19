@@ -15,8 +15,5 @@ public class LandingSteps extends TestBase{
         scr.trackBar.track.click();
     }
 
-    @Then("^I verify that I am on Track page$")
-    public void printMessage() { System.out.println("Labs");
-        }
-    }
+
 }
