@@ -13,6 +13,7 @@ public class TestBase {
 	public static AppiumDriver driver;
 	public static ScreenBase scr;
 
+
 	@BeforeSuite
 	public void setUp(){
 

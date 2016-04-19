@@ -3,13 +3,21 @@ package pages;
 import support.TestBase;
 
 /**
- * Created by abarabash on 2/16/16.
+ * Created by ochesnokova on 2/16/16.
  */
 public class ScreenBase extends TestBase {
 
 
     public MainScreen mainScreen;
-    public UserListScreen userListScreen;
+
+    public MainMenuScreen mainMenuScreen;
+
+    public BigPictureScreen bigPictureScreen;
+
+    public TrackBar trackBar;
+
+    //public VeryGood veryGood;
+
 
 
     public ScreenBase(){
@@ -19,9 +27,18 @@ public class ScreenBase extends TestBase {
 
     public void initialize(){
 
+        mainMenuScreen = new MainMenuScreen();
+
         mainScreen = new MainScreen();
-        userListScreen = new UserListScreen();
+
+        bigPictureScreen = new BigPictureScreen();
+
+        trackBar = new TrackBar();
+
+        //veryGood = new VeryGood();
+
 
     }
+
 
 }

@@ -14,7 +14,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by idorovskikh on 1/18/16.
+ * Created by ochesnokova on 1/18/16.
  */
 public class CommonUtils {
     private static Properties prop = new Properties();

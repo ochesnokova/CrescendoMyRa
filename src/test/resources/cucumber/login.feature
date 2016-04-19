@@ -1,12 +1,15 @@
-Feature: Instagram login
+Feature: launch the MyRa
+
+  Background: tap on welcome picture
+    Given tap on welcome picture
 
   @login
-  Scenario: Login as Igor
-    When I tap on Login button
-    Then I type "login" into username field
-    And I type "password" into password field
-    Then I tap on Login button
-    And I verify user is logged in
+  Scenario: First
+    Given I tap on Big Picture
+    Then I tap on Very Good
+
+
+
 
 
 
