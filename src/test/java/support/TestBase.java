@@ -23,7 +23,6 @@ public class TestBase {
 		System.out.println("ScreenBase constructor starting....");
 		scr = new ScreenBase();
 
-
 	}
 
 	@AfterSuite
