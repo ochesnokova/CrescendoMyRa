@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by ochesnokova on 2/16/16.
  */
-public class MainScreen extends TestBase{
+public class WelcomeScreen extends TestBase {
 
     // @AndroidFindBy(name = "signUpButton")
     @iOSFindBy(name = "intro_screen_letterbox.png")
@@ -21,9 +21,12 @@ public class MainScreen extends TestBase{
     @iOSFindBy(name = "Big Picture")
     public MobileElement bigPicture;
 
-    public MainScreen() {
+    @iOSFindBy(name = "Fatigue")
+    public MobileElement fatigue;
 
-        System.out.println("Initializing MainScreen elements....");
+    public WelcomeScreen() {
+
+        System.out.println("Initializing WelcomeScreen elements....");
         PageFactory.initElements(new AppiumFieldDecorator(driver, 20, TimeUnit.SECONDS), this);
     }
 }

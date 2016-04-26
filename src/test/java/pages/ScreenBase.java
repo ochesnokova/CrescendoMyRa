@@ -8,7 +8,7 @@ import support.TestBase;
 public class ScreenBase extends TestBase {
 
 
-    public MainScreen mainScreen;
+    public WelcomeScreen welcomeScreen;
 
     public MainMenuScreen mainMenuScreen;
 
@@ -16,8 +16,11 @@ public class ScreenBase extends TestBase {
 
     public TrackBar trackBar;
 
-    //public VeryGood veryGood;
+    public FatigueScreen fatigueScreen;
 
+    public JointPainScreen jointPainScreen;
+
+    public JointPainWelcomeScreen jointPainWelcomeScreen;
 
 
     public ScreenBase(){
@@ -29,13 +32,19 @@ public class ScreenBase extends TestBase {
 
         mainMenuScreen = new MainMenuScreen();
 
-        mainScreen = new MainScreen();
+        welcomeScreen = new WelcomeScreen();
 
         bigPictureScreen = new BigPictureScreen();
 
         trackBar = new TrackBar();
 
-        //veryGood = new VeryGood();
+        fatigueScreen = new FatigueScreen();
+
+        jointPainScreen = new JointPainScreen();
+
+        jointPainWelcomeScreen = new JointPainWelcomeScreen();
+
+
 
 
     }

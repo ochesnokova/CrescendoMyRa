@@ -10,7 +10,7 @@ public class Common extends TestBase{
 
     @Given("^tap on welcome picture$")
     public void tapOnWelcomePicture() {
-        scr.mainScreen.welcomePicture.click();
+        scr.welcomeScreen.welcomePicture.click();
     }
 
 

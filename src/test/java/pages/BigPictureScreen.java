@@ -33,6 +33,13 @@ public class BigPictureScreen extends TestBase {
     public MobileElement veryBad;
 
 
+    @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[7]/UIATextView[1]")
+    public MobileElement textField;
+
+    @iOSFindBy(name = "nav bar right arrow")
+    public MobileElement forwardArrow;
+
+
     public MobileElement buttonWithValue1(){
 
         List<MobileElement> list = driver.findElements(By.className("UIATableCell"));

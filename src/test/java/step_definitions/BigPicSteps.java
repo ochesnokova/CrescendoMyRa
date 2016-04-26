@@ -1,6 +1,5 @@
 package step_definitions;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -15,7 +14,7 @@ public class BigPicSteps extends TestBase{
 
     @Given("^I tap on Big Picture$")
     public void iTapOnBigPicture() throws Throwable {
-        scr.mainScreen.bigPicture.click();
+        scr.welcomeScreen.bigPicture.click();
     }
 
     @Then("^I tap on Very Good$")
@@ -24,7 +23,7 @@ public class BigPicSteps extends TestBase{
 
     }
 
-    @And("^I verify blue color$")
+    @And("^I verify number one")
     public void iVerifyBlueColor() throws Throwable {
        MobileElement button1 = scr.bigPictureScreen.buttonWithValue1();
 
@@ -39,7 +38,7 @@ public class BigPicSteps extends TestBase{
        scr.bigPictureScreen.good.click();
     }
 
-    @And("^I verify green color$")
+    @And("^I verify number two")
     public void iVerifyGreenColor() throws Throwable {
         MobileElement button2 = scr.bigPictureScreen.buttonWithValue1();
 
@@ -57,7 +56,7 @@ public class BigPicSteps extends TestBase{
 
     }
 
-    @And("^I verify yellow color$")
+    @And("^I verify number three$")
     public void iVerifyYellowColor() throws Throwable {
         MobileElement button2 = scr.bigPictureScreen.buttonWithValue1();
 
@@ -72,7 +71,7 @@ public class BigPicSteps extends TestBase{
 
     }
 
-    @And("^I verify orange color$")
+    @And("^I verify number four$")
     public void iVerifyOrangeColor() throws Throwable {
         MobileElement button2 = scr.bigPictureScreen.buttonWithValue1();
 
@@ -89,7 +88,7 @@ public class BigPicSteps extends TestBase{
 
     }
 
-    @And("^I verify red color$")
+    @And("^I verify number five$")
     public void iVerifyRedColor() throws Throwable {
 
         MobileElement button2 = scr.bigPictureScreen.buttonWithValue1();
@@ -98,6 +97,19 @@ public class BigPicSteps extends TestBase{
 
         Assert.assertEquals("5", expectedAttributeValue);
 
+
+    }
+
+    @Then("^I tap on text field$")
+    public void iTapOnTextField() throws Throwable {
+        scr.bigPictureScreen.textField.click();
+
+    }
+
+    @And("^I type \"([^\"]*)\" into text field$")
+    public void iTypeIntoTextField(String name) {
+
+        scr.bigPictureScreen.textField.sendKeys(name);
 
 
     }

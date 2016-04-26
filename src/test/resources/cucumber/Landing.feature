@@ -5,10 +5,13 @@ Feature: As a user I will be able to navigate between tracks
 
     @Landing
     Scenario: check the tracks
-      Given I tap on Track
+     #Given I tap on Track
       Then I verify that I am on Track page
       Then I tap on Summary
-      And I tap on Me
+      And T verify "Average_time_with_morning" is present
+      Then I tap on Me
+      And I verify that I am on Me page
       Then I tap on Resources
+      And I verify that I am on Resources page
 
 
