@@ -10,19 +10,16 @@ import support.TestBase;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ochesnokova on 4/12/16.
+ * Created by ochesnokova on 5/2/16.
  */
-public class MainMenuScreen extends TestBase{
+public class MeScreen extends TestBase {
 
-    @AndroidFindBy(name = "track_list_big_pic")
-    @iOSFindBy(name = "BigPictureScreen")
-    public MobileElement bigPicture;
+    @AndroidFindBy(name = "Reminder")
+    @iOSFindBy(name = "Reminder")
+    public MobileElement reminder;
 
-
-    public MainMenuScreen() {
-
-        System.out.println("Initializing MainMenuScreen elements....");
+    public MeScreen() {
+        System.out.println("Initializing MeScreen elements....");
         PageFactory.initElements(new AppiumFieldDecorator(driver, 20, TimeUnit.SECONDS), this);
     }
 }
-

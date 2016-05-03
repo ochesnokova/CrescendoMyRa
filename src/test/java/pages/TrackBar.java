@@ -1,6 +1,7 @@
 package pages;
 
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import junit.framework.Test;
@@ -14,16 +15,20 @@ import java.util.concurrent.TimeUnit;
  */
 public class TrackBar extends TestBase {
 
-
+    @AndroidFindBy(id = "fragment_home_track")
     @iOSFindBy(name = "Track")
     public MobileElement track;
 
+
+    @AndroidFindBy(id = "fragment_home_summary")
     @iOSFindBy(name = "Summary")
     public MobileElement summary;
 
+    @AndroidFindBy(id = "fragment_home_me")
     @iOSFindBy(name = "Me")
     public MobileElement me;
 
+    @AndroidFindBy(id = "fragment_home_resources")
     @iOSFindBy(name = "Resources")
     public MobileElement resources;
 

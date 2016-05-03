@@ -2,6 +2,8 @@ package pages;
 
 import support.TestBase;
 
+import javax.annotation.Resources;
+
 /**
  * Created by ochesnokova on 2/16/16.
  */
@@ -20,7 +22,11 @@ public class ScreenBase extends TestBase {
 
     public JointPainScreen jointPainScreen;
 
-    public JointPainWelcomeScreen jointPainWelcomeScreen;
+    public JointWelcomeScreen jointPainWelcomeScreen;
+
+    public MorningStiffnessScreen morningStiffnessScreen;
+    public MeScreen meScreen;
+    public ResourcesScreen resourcesScreen;
 
 
     public ScreenBase(){
@@ -42,8 +48,14 @@ public class ScreenBase extends TestBase {
 
         jointPainScreen = new JointPainScreen();
 
-        jointPainWelcomeScreen = new JointPainWelcomeScreen();
+        jointPainWelcomeScreen = new JointWelcomeScreen();
 
+        morningStiffnessScreen = new MorningStiffnessScreen();
+
+        meScreen = new MeScreen();
+
+
+        resourcesScreen = new ResourcesScreen();
 
 
 

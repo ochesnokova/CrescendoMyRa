@@ -10,26 +10,23 @@ import support.TestBase;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ochesnokova on 4/25/16.
+ * Created by ochesnokova on 4/26/16.
  */
-public class FatigueScreen extends TestBase {
+public class JointWelcomeScreen extends TestBase {
+
 
     //@AndroidFindBy(name = "")
-    @iOSFindBy(name = "NO FATIGUE")
-    public MobileElement noFatigue;
+    @iOSFindBy(name = "joint_pain_ftux_letterbox.png")
+    public MobileElement wholeImageJointPain;
 
     //@AndroidFindBy(name = "")
-    @iOSFindBy(name = "BIG TIRED")
-    public MobileElement bitTired;
+    @iOSFindBy(name = "Get Started")
+    public MobileElement getStarted;
 
-    //@AndroidFindBy(name = "")
-    @iOSFindBy(name = "How fatigued were you")
-    public MobileElement howFatiguedWereYou;
-
-
-    public FatigueScreen() {
-        System.out.println("Initializing FatigueScreen elements....");
+    public JointWelcomeScreen() {
+        System.out.println("Initializing JointWelcomeScreen elements....");
         PageFactory.initElements(new AppiumFieldDecorator(driver, 20, TimeUnit.SECONDS), this);
 
     }
+
 }

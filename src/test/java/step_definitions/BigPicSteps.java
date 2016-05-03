@@ -1,5 +1,6 @@
 package step_definitions;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -29,7 +30,7 @@ public class BigPicSteps extends TestBase{
 
         String expectedAttributeValue = button1.getAttribute("name");
 
-        Assert.assertEquals("1", expectedAttributeValue);
+        Assert.assertEquals("0", expectedAttributeValue);
 
     }
 
@@ -112,6 +113,16 @@ public class BigPicSteps extends TestBase{
         scr.bigPictureScreen.textField.sendKeys(name);
 
 
+    }
+
+    @And("^T tap on Done$")
+    public void tTapOnDone() throws Throwable {
+        scr.bigPictureScreen.done.click();
+    }
+
+    @Given("^I tap on Track$")
+    public void iTapOnTrack() throws Throwable {
+        scr.trackBar.track.click();
     }
 }
 

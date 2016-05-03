@@ -1,9 +1,11 @@
 package step_definitions;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import junit.framework.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import support.TestBase;
 
 import static org.testng.Assert.assertTrue;
@@ -33,8 +35,7 @@ public class LandingSteps extends TestBase{
 
     @And("^T verify \"([^\"]*)\" is present$")
     public void tVerifyIsPresent(String arg0) throws Throwable {
-        scr.trackBar.summary.findElementsByName("Average time with morning stiffness");
-
+        Assert.assertTrue(scr.trackBar.summary.isDisplayed());
     }
 
     @Then("^I tap on Me$")
@@ -45,7 +46,10 @@ public class LandingSteps extends TestBase{
 
     @And("^I verify that I am on Me page$")
     public void iVerifyThatIAmOnMePage() throws Throwable {
-        scr.trackBar.me.findElementsByName("Reminders");
+
+        Assert.assertTrue(scr.meScreen.reminder.isDisplayed());
+
+
 
     }
 
@@ -56,7 +60,16 @@ public class LandingSteps extends TestBase{
 
     @And("^I verify that I am on Resources page$")
     public void iVerifyThatIAmOnResourcesPage() throws Throwable {
-        scr.trackBar.resources.findElementsByName("Rate this App");
+
+        Assert.assertTrue(scr.resourcesScreen.rateThisApp.isDisplayed());
+
+        // scr.resourcesScreen.rateThisApp.sendKeys("iwjfnsvkdfjnv");
+
+        // Select select = new Select(driver.findElement(By.className(UIAPickerWheel\"")));
+
+        //  select.selectByValue("1234");
+
+        // driver.findElement(By.ByClassName("UIAPickerWheel")).select(14);
     }
 }
 

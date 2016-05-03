@@ -18,6 +18,7 @@ Feature: As a user I'm able to report my overall felling
     And I verify number five
     Then I tap on text field
     And I type "test" into text field
+    And T tap on Done
 
 
 

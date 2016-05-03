@@ -14,10 +14,11 @@ import java.util.concurrent.TimeUnit;
  */
 public class WelcomeScreen extends TestBase {
 
-    // @AndroidFindBy(name = "signUpButton")
+    @AndroidFindBy(id = "rl_intro_screen")
     @iOSFindBy(name = "intro_screen_letterbox.png")
     public MobileElement welcomePicture;
 
+    @AndroidFindBy(id = "track_list_big_pic")
     @iOSFindBy(name = "Big Picture")
     public MobileElement bigPicture;
 

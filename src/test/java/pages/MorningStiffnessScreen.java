@@ -1,7 +1,6 @@
 package pages;
 
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,23 +9,24 @@ import support.TestBase;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ochesnokova on 4/25/16.
+ * Created by ochesnokova on 5/2/16.
  */
-public class JointPainScreen extends TestBase {
+public class MorningStiffnessScreen extends TestBase {
+
+    //@AndroidFindBy(name = "")
+    @iOSFindBy(id = "How long did your morning stiffness last")
+    public MobileElement howLongDidYourMorningStiffnessLast;
+
 
     //@AndroidFindBy(name = "")
     @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[1]/UIAButton[1]")
-    public MobileElement noPain;
+    public MobileElement noMorningStiffness;
 
-
-    // @AndroidFindBy(name = "")
     @iOSFindBy(name = "nav bar right arrow")
     public MobileElement forwardArrow;
 
-    public JointPainScreen() {
-        System.out.println("Initializing JointPainScreen elements....");
+    public MorningStiffnessScreen() {
+        System.out.println("Initializing MorningStiffnessScreen elements....");
         PageFactory.initElements(new AppiumFieldDecorator(driver, 20, TimeUnit.SECONDS), this);
     }
-
-
 }
