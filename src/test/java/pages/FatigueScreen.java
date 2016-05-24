@@ -15,16 +15,20 @@ import java.util.concurrent.TimeUnit;
 public class FatigueScreen extends TestBase {
 
     //@AndroidFindBy(name = "")
-    @iOSFindBy(name = "NO FATIGUE")
+    @iOSFindBy(id = "NO FATIGUE")
     public MobileElement noFatigue;
 
     //@AndroidFindBy(name = "")
-    @iOSFindBy(name = "BIG TIRED")
+    @iOSFindBy(id = "BIG TIRED")
     public MobileElement bitTired;
 
     //@AndroidFindBy(name = "")
-    @iOSFindBy(name = "How fatigued were you")
+    @iOSFindBy(id = "How fatigued were you")
     public MobileElement howFatiguedWereYou;
+
+
+    @iOSFindBy(id = "1")
+    public MobileElement numberOne;
 
 
     public FatigueScreen() {

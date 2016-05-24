@@ -11,35 +11,40 @@ Feature: As a user I'm able to record daily feeling
     Then I tap on text field
     And I type "test" into text field
     And T tap on Done
-    Then I tap on forward arrow on Big Picture screen
+    Then I tap on forward arrow
 
     Then I tap on Get Started button on Joint Pain Welcome screen
     Then I verify that I am on Joint Pain Screen
     And I tap on no pain
-    Then I tap on forward arrow on Joint Pain screen
+    Then I tap on forward arrow
 
 
 
 
     Then I verify that I am on Morning Stiffness screen
     And I tap on No Morning Stiffness
-    Then I tap on forward arrow on Morning Stiffness screen
+    Then I tap on forward arrow
 
 
 
     And  I verify that I am on Fatigue screen
-    And I tap on No Fatigue for no pain path
-#    Then I tap on forward arrow on Fatigue screen
- #   And I verify that I am on Daily Functionality screen
-#    Then I tap on Add an Activity
-#    And I verify that I am on Add Activities screen
-#    Then I tap on Bathing
-#    And I tap Done
-#    And I verify that I am on Daily Functionality screen
-#    Then I tap on number one Easy for Bathing
-#    Then I tap on forward arrow on Daily Functionality screen
-#    And I verify that I am on Medication screen
-#    And I tap on Add a Medication
+    And I tap on No Fatigue
+   # Then I verify number one
+    Then I tap on forward arrow
+    And I verify that I am on Daily Functionality screen
+    Then I tap on Add an Activity
+    And I verify that I am on Add Activities screen
+    Then I tap on Bathing
+    And I tap Done
+    And I verify that I am on Daily Functionality screen and Bathing were added
+    Then I tap on number one Easy for Bathing
+  # Then I verify number one
+    Then I tap on text field
+    And I type "test" into text field
+    And T tap on Done
+    Then I tap on forward arrow
+    And I verify that I am on Medication screen
+    And I tap on Add a Medication
 #    And I verify that I am on Add Medication screen
 #    Then I tap on Actemra
 #    And I verify that I am Actemra detailed page

@@ -1,7 +1,6 @@
 package pages;
 
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,18 +9,19 @@ import support.TestBase;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ochesnokova on 5/2/16.
+ * Created by ochesnokova on 5/24/16.
  */
-public class ResourcesScreen extends TestBase {
+public class MedicationScreen extends TestBase {
 
 
-    @AndroidFindBy(id = "rate_this_app")
-    @iOSFindBy(id = "Rate this App")
-    public MobileElement rateThisApp;
+    @iOSFindBy(id = "add button")
+    public MobileElement addaMedication;
 
+    public MedicationScreen() {
 
-    public ResourcesScreen() {
-        System.out.println("Initializing ResourcesScreen elements....");
+        System.out.println("Initializing MedicationScreen elements....");
         PageFactory.initElements(new AppiumFieldDecorator(driver, 20, TimeUnit.SECONDS), this);
     }
+
 }
+

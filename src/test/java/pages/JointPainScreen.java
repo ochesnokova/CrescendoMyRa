@@ -20,7 +20,7 @@ public class JointPainScreen extends TestBase {
 
 
     // @AndroidFindBy(name = "")
-    @iOSFindBy(name = "nav bar right arrow")
+    @iOSFindBy(id = "nav bar right arrow")
     public MobileElement forwardArrow;
 
     public JointPainScreen() {

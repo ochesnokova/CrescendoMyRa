@@ -22,7 +22,7 @@ public class MorningStiffnessScreen extends TestBase {
     @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[1]/UIAButton[1]")
     public MobileElement noMorningStiffness;
 
-    @iOSFindBy(name = "nav bar right arrow")
+    @iOSFindBy(id = "nav bar right arrow")
     public MobileElement forwardArrow;
 
     public MorningStiffnessScreen() {

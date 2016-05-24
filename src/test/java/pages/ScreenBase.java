@@ -1,8 +1,7 @@
 package pages;
 
-import support.TestBase;
 
-import javax.annotation.Resources;
+import support.TestBase;
 
 /**
  * Created by ochesnokova on 2/16/16.
@@ -25,8 +24,14 @@ public class ScreenBase extends TestBase {
     public JointWelcomeScreen jointPainWelcomeScreen;
 
     public MorningStiffnessScreen morningStiffnessScreen;
+
     public MeScreen meScreen;
+
     public ResourcesScreen resourcesScreen;
+
+    public DailyFunctionalityScreen dailyFunctionalityScreen;
+
+    public MedicationScreen medicationScreen;
 
 
     public ScreenBase(){
@@ -54,10 +59,11 @@ public class ScreenBase extends TestBase {
 
         meScreen = new MeScreen();
 
-
         resourcesScreen = new ResourcesScreen();
 
+        dailyFunctionalityScreen = new DailyFunctionalityScreen();
 
+        medicationScreen = new MedicationScreen();
 
     }
 

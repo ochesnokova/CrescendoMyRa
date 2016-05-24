@@ -19,24 +19,24 @@ import java.util.concurrent.TimeUnit;
 public class BigPictureScreen extends TestBase {
 
 
-    @AndroidFindBy(id = "rl_very_good")
-    @iOSFindBy(name = "Very Good")
+    //@AndroidFindBy(id = "rl_very_good")
+    @iOSFindBy(id = "Very Good")
     public MobileElement veryGood;
 
-    @AndroidFindBy(id = "rl_good")
-    @iOSFindBy(name = "Good")
+    // @AndroidFindBy(id = "rl_good")
+    @iOSFindBy(id = "Good")
     public MobileElement good;
 
-    @AndroidFindBy(id = "rl_good")
-    @iOSFindBy(name = "Okay")
+    //@AndroidFindBy(id = "rl_good")
+    @iOSFindBy(id = "Okay")
     public MobileElement okay;
 
-    @AndroidFindBy(id = "rl_bad")
-    @iOSFindBy(name = "Bad")
+    //@AndroidFindBy(id = "rl_bad")
+    @iOSFindBy(id = "Bad")
     public MobileElement bad;
 
-    @AndroidFindBy(name = "rl_very_bad")
-    @iOSFindBy(name = "Very Bad")
+    //@AndroidFindBy(name = "rl_very_bad")
+    @iOSFindBy(id = "Very Bad")
     public MobileElement veryBad;
 
     @AndroidFindBy(id = "ed_notepad")
@@ -44,12 +44,12 @@ public class BigPictureScreen extends TestBase {
     public MobileElement textField;
 
     @AndroidFindBy(id = "title_right_arrow")
-    @iOSFindBy(name = "nav bar right arrow")
+    @iOSFindBy(id = "nav bar right arrow")
     public MobileElement forwardArrow;
 
 
     //@AndroidFindBy(name = "")
-    @iOSFindBy(name = "Done")
+    @iOSFindBy(id = "Done")
     public MobileElement done;
 
 

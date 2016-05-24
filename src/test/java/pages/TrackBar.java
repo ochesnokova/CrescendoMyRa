@@ -16,20 +16,20 @@ import java.util.concurrent.TimeUnit;
 public class TrackBar extends TestBase {
 
     @AndroidFindBy(id = "fragment_home_track")
-    @iOSFindBy(name = "Track")
+    @iOSFindBy(id = "Track")
     public MobileElement track;
 
 
     @AndroidFindBy(id = "fragment_home_summary")
-    @iOSFindBy(name = "Summary")
+    @iOSFindBy(id = "Summary")
     public MobileElement summary;
 
     @AndroidFindBy(id = "fragment_home_me")
-    @iOSFindBy(name = "Me")
+    @iOSFindBy(id = "Me")
     public MobileElement me;
 
     @AndroidFindBy(id = "fragment_home_resources")
-    @iOSFindBy(name = "Resources")
+    @iOSFindBy(id = "Resources")
     public MobileElement resources;
 
 

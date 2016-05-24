@@ -17,11 +17,6 @@ import static org.testng.Assert.assertTrue;
 public class NoPainPathSteps extends TestBase {
 
 
-    @Then("^I tap on forward arrow on Big Picture screen$")
-    public void iTapOnForwardArrowOnBigPictureScreen() {
-        scr.bigPictureScreen.forwardArrow.click();
-    }
-
     @Then("^I tap on Get Started button on Joint Pain Welcome screen$")
     public void iTapOnGetStartedButtonOnJointPainWelcomeScreen() {
 
@@ -48,10 +43,6 @@ public class NoPainPathSteps extends TestBase {
         scr.jointPainScreen.noPain.click();
     }
 
-    @Then("^I tap on forward arrow on Joint Pain screen$")
-    public void iTapOnForwardArrowOnJointPainScreen() throws Throwable {
-        scr.jointPainScreen.forwardArrow.click();
-    }
 
     @Then("^I verify that I am on Morning Stiffness screen$")
     public void iVerifyThatIAmOnMorningStiffnessScreen() {
@@ -63,17 +54,62 @@ public class NoPainPathSteps extends TestBase {
     public void iTapOnNoMorningStiffness() throws Throwable {
         scr.morningStiffnessScreen.noMorningStiffness.click();
 
-    }
 
-    @Then("^I tap on forward arrow on Morning Stiffness screen$")
-    public void iTapOnForwardArrowOnMorningStiffnessScreen() throws Throwable {
-        scr.morningStiffnessScreen.forwardArrow.click();
     }
 
     @And("^I verify that I am on Fatigue screen$")
     public void iVerifyThatIAmOnFatigueScreen() {
         Boolean isDisplayed = scr.fatigueScreen.howFatiguedWereYou.isDisplayed();
         Assert.assertTrue(isDisplayed);
+
+
+    }
+
+    @And("^I verify that I am on Daily Functionality screen$")
+    public void iVerifyThatIAmOnDailyFunctionalityScreen() throws Throwable {
+        scr.dailyFunctionalityScreen.addAnActivity.isDisplayed();
+    }
+
+    @Then("^I tap on Add an Activity$")
+    public void iTapOnAddAnActivity() throws Throwable {
+        scr.dailyFunctionalityScreen.addAnActivity.click();
+    }
+
+    @And("^I verify that I am on Add Activities screen$")
+    public void iVerifyThatIAmOnAddActivitiesScreen() throws Throwable {
+        scr.dailyFunctionalityScreen.dailyLife.isDisplayed();
+    }
+
+    @Then("^I tap on Bathing$")
+    public void iTapOnBathing() throws Throwable {
+        scr.dailyFunctionalityScreen.bathing.click();
+    }
+
+    @And("^I tap Done$")
+    public void iTapDone() throws Throwable {
+        scr.dailyFunctionalityScreen.done.click();
+    }
+
+    @And("^I verify that I am on Daily Functionality screen and Bathing were added$")
+    public void iVerifyThatIAmOnDailyFunctionalityScreenAndBathingWereAdded() throws Throwable {
+        scr.dailyFunctionalityScreen.bathing.isDisplayed();
+
+
+    }
+
+    @Then("^I tap on number one Easy for Bathing$")
+    public void iTapOnNumberOneEasyForBathing() throws Throwable {
+        scr.dailyFunctionalityScreen.easy.click();
+    }
+
+    @And("^I verify that I am on Medication screen$")
+    public void iVerifyThatIAmOnMedicationScreen() throws Throwable {
+        scr.medicationScreen.addaMedication.isDisplayed();
+    }
+
+    @And("^I tap on Add a Medication$")
+    public void iTapOnAddAMedication() throws Throwable {
+        scr.medicationScreen.addaMedication.click();
 
     }
 }

@@ -30,7 +30,7 @@ public class BigPicSteps extends TestBase{
 
         String expectedAttributeValue = button1.getAttribute("name");
 
-        Assert.assertEquals("0", expectedAttributeValue);
+        Assert.assertEquals("1", expectedAttributeValue);
 
     }
 

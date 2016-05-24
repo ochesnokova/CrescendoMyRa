@@ -20,7 +20,7 @@ public class JointWelcomeScreen extends TestBase {
     public MobileElement wholeImageJointPain;
 
     //@AndroidFindBy(name = "")
-    @iOSFindBy(name = "Get Started")
+    @iOSFindBy(id = "Get Started")
     public MobileElement getStarted;
 
     public JointWelcomeScreen() {
