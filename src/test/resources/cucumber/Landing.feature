@@ -4,7 +4,7 @@ Feature: As a user I will be able to navigate between tracks
     Given tap on welcome picture
 
     @Landing
-    Scenario: check the tracks
+    Scenario: check the Navigation Footer
       Given I tap on Track
       Then I verify that I am on Track page
       Then I tap on Summary

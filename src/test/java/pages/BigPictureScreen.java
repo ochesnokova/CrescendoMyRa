@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 public class BigPictureScreen extends TestBase {
 
 
-    //@AndroidFindBy(id = "rl_very_good")
+    @AndroidFindBy(id = "rl_very_good")
     @iOSFindBy(id = "Very Good")
     public MobileElement veryGood;
 
@@ -51,6 +51,13 @@ public class BigPictureScreen extends TestBase {
     //@AndroidFindBy(name = "")
     @iOSFindBy(id = "Done")
     public MobileElement done;
+
+    @iOSFindBy(id = "How are you feeling overall?")
+    public MobileElement howareyoufeelingoverall;
+
+
+    @iOSFindBy(id = ("Back"))
+    public MobileElement back;
 
 
     public MobileElement buttonWithValue1(){

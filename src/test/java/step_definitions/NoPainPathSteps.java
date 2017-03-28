@@ -5,6 +5,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import io.appium.java_client.MobileElement;
 import junit.framework.Assert;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.remote.server.handler.interactions.touch.Up;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import support.TestBase;
@@ -110,6 +112,88 @@ public class NoPainPathSteps extends TestBase {
     @And("^I tap on Add a Medication$")
     public void iTapOnAddAMedication() throws Throwable {
         scr.medicationScreen.addaMedication.click();
+
+    }
+
+    @And("^I verify that I am on Add Medication screen$")
+    public void iVerifyThatIAmOnAddMedicationScreen() throws Throwable {
+        scr.medicationScreen.actemra.isDisplayed();
+    }
+
+    @Then("^I tap on Actemra$")
+    public void iTapOnActemra() throws Throwable {
+        scr.medicationScreen.actemra.click();
+    }
+
+    @And("^I verify that I am Actemra detailed page$")
+    public void iVerifyThatIAmActemraDetailedPage() throws Throwable {
+        scr.medicationDetailScreen.actemra.isDisplayed();
+    }
+
+
+    @Then("^I tap on amount field$")
+    public void iTapOnAmountField() throws Throwable {
+        scr.medicationDetailScreen.amountField.click();
+    }
+
+    @And("^I type \"([^\"]*)\" into amount field$")
+    public void iTypeIntoAmountField(String arg0) {
+        scr.medicationDetailScreen.amountField.sendKeys(new CharSequence[]{"30"});
+
+    }
+
+    @And("^I verify that I am on Labs screen$")
+    public void iVerifyThatIAmOnLabsScreen() throws Throwable {
+        scr.labsScreen.crp.isDisplayed();
+
+
+    }
+
+    @Then("^T tap on VectraDA$")
+    public void tTapOnVectraDA() throws Throwable {
+        scr.labsScreen.vectraDA.click();
+    }
+
+    @Then("^I tap on Unit field$")
+    public void iTapOnUnitField() throws Throwable {
+        scr.medicationDetailScreen.unitField.click();
+    }
+
+    @Then("^I type \"([^\"]*)\" into Unit field$")
+    public void iTypeIntoUnitField(String arg0) throws Throwable {
+        scr.medicationDetailScreen.unitField.sendKeys(new CharSequence[]{"ml"});
+    }
+
+    @Then("^I tap on Times field$")
+    public void iTapOnTimesField() throws Throwable {
+        scr.medicationDetailScreen.timesField.click();
+    }
+
+    @And("^I type \"([^\"]*)\" into Times field$")
+    public void iTypeIntoTimesField(String arg0) throws Throwable {
+        scr.medicationDetailScreen.timesField.sendKeys(new CharSequence[]{"2"});
+    }
+
+    @Then("^I tap on Days field$")
+    public void iTapOnDaysField() throws Throwable {
+        scr.medicationDetailScreen.daysField.click();
+    }
+
+    @And("^I type \"([^\"]*)\" into Days field$")
+    public void iTypeIntoDaysField(String arg0) throws Throwable {
+        scr.medicationDetailScreen.daysField.sendKeys(new CharSequence[]{"1"});
+    }
+
+    @And("^I make a swipe up gesture$")
+    public void swipingVertical() throws InterruptedException {
+        Dimension size = driver.manage().window().getSize();
+        System.out.println(size);
+        int starty = (int) (size.height * 0.60);
+        int endy = (int) (size.height * 0.20);
+        int startx = size.width / 2;
+        System.out.println("starty = " + starty + " ,endy = " + endy + " , startx = " + startx);
+        driver.swipe(startx, starty, startx, endy, 3000);
+        Thread.sleep(2000);
 
     }
 }

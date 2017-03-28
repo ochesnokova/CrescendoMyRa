@@ -19,7 +19,7 @@ public class FatigueScreen extends TestBase {
     public MobileElement noFatigue;
 
     //@AndroidFindBy(name = "")
-    @iOSFindBy(id = "BIG TIRED")
+    @iOSFindBy(id = "A BIT TIRED")
     public MobileElement bitTired;
 
     //@AndroidFindBy(name = "")

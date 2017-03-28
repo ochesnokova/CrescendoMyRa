@@ -13,9 +13,9 @@ import support.TestBase;
  */
 public class BigPicSteps extends TestBase{
 
-    @Given("^I tap on Big Picture$")
-    public void iTapOnBigPicture() throws Throwable {
-        scr.welcomeScreen.bigPicture.click();
+    @Given("^I tap on Big Picture Tile$")
+    public void iTapOnBigPictureTile() throws Throwable {
+        scr.welcomeScreen.bigPictureTile.click();
     }
 
     @Then("^I tap on Very Good$")

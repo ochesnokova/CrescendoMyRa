@@ -29,5 +29,10 @@ public class FatigueSteps extends TestBase {
     public void iTapOnABitTired() throws Throwable {
         scr.fatigueScreen.bitTired.click();
     }
+
+    @And("^I verify number two Bit Tired$")
+    public void iVerifyNumberTwoBitTired() throws Throwable {
+        scr.fatigueScreen.bitTired.findElementsByName("A BIT TIRED");
+    }
 }
 

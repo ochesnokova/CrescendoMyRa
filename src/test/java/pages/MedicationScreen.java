@@ -17,6 +17,9 @@ public class MedicationScreen extends TestBase {
     @iOSFindBy(id = "add button")
     public MobileElement addaMedication;
 
+    @iOSFindBy(id = "Actemra®")
+    public MobileElement actemra;
+
     public MedicationScreen() {
 
         System.out.println("Initializing MedicationScreen elements....");

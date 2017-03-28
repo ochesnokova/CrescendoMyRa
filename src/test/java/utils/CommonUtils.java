@@ -55,6 +55,9 @@ public class CommonUtils {
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,
                 prop.getProperty("device.name"));
 
+        //capabilities.setCapability(MobileCapabilityType.APP_WAIT_ACTIVITY,
+        //  prop.getProperty("wait.activity"));
+
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,
                 prop.getProperty("platform.name"));
 

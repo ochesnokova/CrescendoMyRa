@@ -1,7 +1,6 @@
 package pages;
 
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,16 +9,18 @@ import support.TestBase;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ochesnokova on 5/2/16.
+ * Created by ochesnokova on 7/19/16.
  */
-public class MeScreen extends TestBase {
+public class LabsScreen extends TestBase {
 
-    @AndroidFindBy(id = "showreminder_btn")
-    @iOSFindBy(id = "Reminder")
-    public MobileElement reminder;
+    @iOSFindBy(id = "CRP")
+    public MobileElement crp;
 
-    public MeScreen() {
-        System.out.println("Initializing MeScreen elements....");
+    @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[1]/UIATextField[1]")
+    public MobileElement vectraDA;
+
+    public LabsScreen() {
+        System.out.println("Initializing LabsScreen elements....");
         PageFactory.initElements(new AppiumFieldDecorator(driver, 20, TimeUnit.SECONDS), this);
     }
 }

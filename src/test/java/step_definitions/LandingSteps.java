@@ -1,6 +1,8 @@
 package step_definitions;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import junit.framework.Assert;
 import org.openqa.selenium.By;
@@ -23,7 +25,7 @@ public class LandingSteps extends TestBase{
 
     @Then("^I verify that I am on Track page$")
     public void iVerifyThatIAmOnTrackPage() throws Throwable {
-        WebElement desiredElement = scr.welcomeScreen.bigPicture;
+        WebElement desiredElement = scr.welcomeScreen.bigPictureTile;
         assertTrue(desiredElement.isDisplayed());
     }
 
@@ -71,5 +73,6 @@ public class LandingSteps extends TestBase{
 
         // driver.findElement(By.ByClassName("UIAPickerWheel")).select(14);
     }
+
 }
 

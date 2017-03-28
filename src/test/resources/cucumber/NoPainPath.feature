@@ -31,33 +31,43 @@ Feature: As a user I'm able to record daily feeling
     And I tap on No Fatigue
    # Then I verify number one
     Then I tap on forward arrow
+
+
     And I verify that I am on Daily Functionality screen
     Then I tap on Add an Activity
     And I verify that I am on Add Activities screen
     Then I tap on Bathing
     And I tap Done
+
+
     And I verify that I am on Daily Functionality screen and Bathing were added
     Then I tap on number one Easy for Bathing
-  # Then I verify number one
-    Then I tap on text field
-    And I type "test" into text field
-    And T tap on Done
     Then I tap on forward arrow
+
+
     And I verify that I am on Medication screen
     And I tap on Add a Medication
-#    And I verify that I am on Add Medication screen
-#    Then I tap on Actemra
-#    And I verify that I am Actemra detailed page
-#    And I type "3" into Amount field
-#    And I type "pills" into Unit field
-#    And I type "2" into Times field
-#    And I type "1" into Days field
-#    Then I tap Done
-#    And I verify that I am on Add Medication screen
-#    And I tap on forward error on Medication screen
-#    And I verify that I am on Labs screen
-#    Then T tap on VectraDA
-#    And  I make a swipe down gesture
+
+    And I verify that I am on Add Medication screen
+    Then I tap on Actemra
+
+    And I verify that I am Actemra detailed page
+    Then I tap on amount field
+    And I type "3" into amount field
+    Then I tap on Unit field
+    Then I type "ml" into Unit field
+    Then I tap on Times field
+    And I type "2" into Times field
+    Then I tap on Days field
+    And I type "1" into Days field
+    Then I tap Done
+
+
+    And I verify that I am on Add Medication screen
+    Then I tap on forward arrow
+    And I verify that I am on Labs screen
+    Then T tap on VectraDA
+    And  I make a swipe up gesture
 #    And I pick the score of the test
-#    Then I tap on Done
+  # Then I tap Done
 

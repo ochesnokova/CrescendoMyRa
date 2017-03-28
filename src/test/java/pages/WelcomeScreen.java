@@ -4,6 +4,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import support.TestBase;
 
@@ -20,10 +21,17 @@ public class WelcomeScreen extends TestBase {
 
     @AndroidFindBy(id = "track_list_big_pic")
     @iOSFindBy(id = "Big Picture")
-    public MobileElement bigPicture;
+    public MobileElement bigPictureTile;
 
     @iOSFindBy(name = "Fatigue")
     public MobileElement fatigue;
+
+
+    @iOSFindBy(name = "Joint Pain")
+    public MobileElement jointPainTile;
+
+    //@iOSFindBy(name = "Big Picture")
+    //public MobileElement bigPictureScreen;
 
     public WelcomeScreen() {
 

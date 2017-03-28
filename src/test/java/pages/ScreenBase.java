@@ -34,12 +34,17 @@ public class ScreenBase extends TestBase {
     public MedicationScreen medicationScreen;
 
 
-    public ScreenBase(){
+    public MedicationDetailScreen medicationDetailScreen;
+
+    public LabsScreen labsScreen;
+
+
+    public ScreenBase() {
 
         System.out.println("ScreenBase constructor executing...");
     }
 
-    public void initialize(){
+    public void initialize() {
 
         mainMenuScreen = new MainMenuScreen();
 
@@ -64,6 +69,10 @@ public class ScreenBase extends TestBase {
         dailyFunctionalityScreen = new DailyFunctionalityScreen();
 
         medicationScreen = new MedicationScreen();
+
+        medicationDetailScreen = new MedicationDetailScreen();
+
+        labsScreen = new LabsScreen();
 
     }
 
