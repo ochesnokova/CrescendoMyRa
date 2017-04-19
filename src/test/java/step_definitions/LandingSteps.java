@@ -35,7 +35,7 @@ public class LandingSteps extends TestBase{
     }
 
 
-    @And("^T verify \"([^\"]*)\" is present$")
+    @And("^I verify \"([^\"]*)\" is present$")
     public void tVerifyIsPresent(String arg0) throws Throwable {
         Assert.assertTrue(scr.trackBar.summary.isDisplayed());
     }

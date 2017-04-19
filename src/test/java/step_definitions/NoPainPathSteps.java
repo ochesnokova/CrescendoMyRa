@@ -2,6 +2,7 @@ package step_definitions;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.appium.java_client.MobileElement;
 import junit.framework.Assert;
@@ -188,13 +189,18 @@ public class NoPainPathSteps extends TestBase {
     public void swipingVertical() throws InterruptedException {
         Dimension size = driver.manage().window().getSize();
         System.out.println(size);
-        int starty = (int) (size.height * 0.60);
-        int endy = (int) (size.height * 0.20);
+        int starty = (int) (size.height * 0.20);
+        int endy = (int) (size.height * 0.60);
         int startx = size.width / 2;
         System.out.println("starty = " + starty + " ,endy = " + endy + " , startx = " + startx);
         driver.swipe(startx, starty, startx, endy, 3000);
         Thread.sleep(2000);
 
+    }
+
+    @Given("^I tap on Big Picture$")
+    public void iTapOnBigPicture() throws Throwable {
+        scr.welcomeScreen.bigPictureTile.click();
     }
 }
 

@@ -10,9 +10,9 @@ import support.TestBase;
  * Created by ochesnokova on 4/25/16.
  */
 public class FatigueSteps extends TestBase {
-    @Given("^I tap on Fatigue$")
-    public void iTapOnFatigue() throws Throwable {
-        scr.welcomeScreen.fatigue.click();
+    @Given("^I tap on Fatigue Tile$")
+    public void iTapOnFatigueTile() throws Throwable {
+        scr.welcomeScreen.fatigueTile.click();
     }
 
     @Then("^I tap on No Fatigue$")

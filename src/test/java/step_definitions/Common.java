@@ -29,6 +29,26 @@ public class Common extends TestBase{
 
     @And("^I tap on Back$")
     public void iTapOnBack() throws Throwable {
-        //scr.bigPictureTile.back.click();
+        scr.bigPictureScreen.back.click();
+    }
+
+    @Then("^I tap on Morning Stiffness Tile$")
+    public void iTapOnMorningStiffnessTile() throws Throwable {
+        scr.welcomeScreen.morningStiffness.click();
+    }
+
+    @Then("^I tap on Daily Functionality Tile$")
+    public void iTapOnDailyFunctionalityTile() throws Throwable {
+        scr.welcomeScreen.dailyFunctionality.click();
+    }
+
+    @Then("^I tap on Medications Tile$")
+    public void iTapOnMedicationsTile() throws Throwable {
+        scr.welcomeScreen.medications.click();
+    }
+
+    @Then("^I tap on Labs Tile$")
+    public void iTapOnLabsTile() throws Throwable {
+        scr.welcomeScreen.labs.click();
     }
 }

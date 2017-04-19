@@ -23,15 +23,28 @@ public class WelcomeScreen extends TestBase {
     @iOSFindBy(id = "Big Picture")
     public MobileElement bigPictureTile;
 
-    @iOSFindBy(name = "Fatigue")
-    public MobileElement fatigue;
+    @iOSFindBy(id = "Fatigue")
+    public MobileElement fatigueTile;
 
 
-    @iOSFindBy(name = "Joint Pain")
+    @iOSFindBy(id = "Joint Pain")
     public MobileElement jointPainTile;
 
-    //@iOSFindBy(name = "Big Picture")
-    //public MobileElement bigPictureScreen;
+
+    @iOSFindBy(id = "Morning Stiffness")
+    public MobileElement morningStiffness;
+
+
+    @iOSFindBy(id = "Daily Functionality")
+    public MobileElement dailyFunctionality;
+
+
+    @iOSFindBy(id = "Medications")
+    public MobileElement medications;
+
+    @iOSFindBy(id = "Labs")
+    public MobileElement labs;
+
 
     public WelcomeScreen() {
 

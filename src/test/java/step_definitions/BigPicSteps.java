@@ -123,6 +123,8 @@ public class BigPicSteps extends TestBase{
     @Given("^I tap on Track$")
     public void iTapOnTrack() throws Throwable {
         scr.trackBar.track.click();
+
+
     }
 }
 
