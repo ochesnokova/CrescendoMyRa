@@ -19,6 +19,9 @@ public class LabsScreen extends TestBase {
     @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[1]/UIATextField[1]")
     public MobileElement vectraDA;
 
+    @iOSFindBy(id = "ESR")
+    public MobileElement esr;
+
     public LabsScreen() {
         System.out.println("Initializing LabsScreen elements....");
         PageFactory.initElements(new AppiumFieldDecorator(driver, 20, TimeUnit.SECONDS), this);

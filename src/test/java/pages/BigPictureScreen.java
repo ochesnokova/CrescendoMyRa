@@ -44,6 +44,7 @@ public class BigPictureScreen extends TestBase {
     public MobileElement textField;
 
     @AndroidFindBy(id = "title_right_arrow")
+
     @iOSFindBy(id = "nav bar right arrow")
     public MobileElement forwardArrow;
 
@@ -58,6 +59,19 @@ public class BigPictureScreen extends TestBase {
 
     @iOSFindBy(id = ("Back"))
     public MobileElement back;
+
+
+    @iOSFindBy(id = "Yesterday")
+    public MobileElement yesterday;
+
+    @iOSFindBy(id = "Select Date")
+    public MobileElement selectDate;
+
+    @iOSFindBy(id = "nav bar left arrow")
+    public MobileElement leftArrow;
+
+    @iOSFindBy(id = "nav bar right arrow")
+    public MobileElement rightArrow;
 
 
     public MobileElement buttonWithValue1(){

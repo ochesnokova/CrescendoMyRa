@@ -48,7 +48,7 @@ TestHooks extends TestBase{
 
         }
         else {
-            driver.resetApp();
+            driver.launchApp();
         }
 
     }
@@ -65,6 +65,8 @@ TestHooks extends TestBase{
         }
 
         driver.closeApp();
+
+
     }
 
     private void embedScreenShot(Scenario scenario, File scrFile) {

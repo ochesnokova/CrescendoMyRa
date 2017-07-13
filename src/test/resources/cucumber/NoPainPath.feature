@@ -45,6 +45,8 @@ Feature: As a user I'm able to record daily feeling
     Then I tap on forward arrow
 
 
+
+
     And I verify that I am on Medication screen
     And I tap on Add a Medication
 
@@ -66,8 +68,8 @@ Feature: As a user I'm able to record daily feeling
     And I verify that I am on Add Medication screen
     Then I tap on forward arrow
     And I verify that I am on Labs screen
-    Then T tap on VectraDA
+    #Then T tap on VectraDA
     And  I make a swipe up gesture
-#    And I pick the score of the test
-  # Then I tap Done
+   #Then I pick the score of the test
+    #And I tap Done
 

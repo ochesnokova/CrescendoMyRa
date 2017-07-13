@@ -34,5 +34,25 @@ public class FatigueSteps extends TestBase {
     public void iVerifyNumberTwoBitTired() throws Throwable {
         scr.fatigueScreen.bitTired.findElementsByName("A BIT TIRED");
     }
+
+    @Then("^I tap on Sluggish$")
+    public void iTapOnSluggish() throws Throwable {
+        scr.fatigueScreen.sluggish.click();
+    }
+
+    @And("^I verify number three Sluggish$")
+    public void iVerifyNumberThreeSluggish() throws Throwable {
+        scr.fatigueScreen.sluggish.findElementsByName("SLUGGISH");
+    }
+
+    @Then("^I tap on Exhausted$")
+    public void iTapOnExhausted() throws Throwable {
+        scr.fatigueScreen.exhausted.click();
+    }
+
+    @And("^I verify number four Exhausted$")
+    public void iVerifyNumberFourExhausted() throws Throwable {
+        scr.fatigueScreen.exhausted.findElementsByName("EXHAUSTED");
+    }
 }
 

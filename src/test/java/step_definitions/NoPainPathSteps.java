@@ -187,14 +187,7 @@ public class NoPainPathSteps extends TestBase {
 
     @And("^I make a swipe up gesture$")
     public void swipingVertical() throws InterruptedException {
-        Dimension size = driver.manage().window().getSize();
-        System.out.println(size);
-        int starty = (int) (size.height * 0.20);
-        int endy = (int) (size.height * 0.60);
-        int startx = size.width / 2;
-        System.out.println("starty = " + starty + " ,endy = " + endy + " , startx = " + startx);
-        driver.swipe(startx, starty, startx, endy, 3000);
-        Thread.sleep(2000);
+        scr.labsScreen.vectraDA.sendKeys("31");
 
     }
 
@@ -202,5 +195,13 @@ public class NoPainPathSteps extends TestBase {
     public void iTapOnBigPicture() throws Throwable {
         scr.welcomeScreen.bigPictureTile.click();
     }
+
+    @And("^I verify that I am on Joint Pain Welcome Screen$")
+    public void iVerifyThatIAmOnJointPainWelcomeScreen() throws Throwable {
+        scr.jointPainWelcomeScreen.wholeImageJointPain.isDisplayed();
+
+    }
+
+
 }
 

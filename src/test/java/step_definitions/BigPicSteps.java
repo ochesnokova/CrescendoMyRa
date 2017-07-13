@@ -6,7 +6,10 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.appium.java_client.MobileElement;
 import junit.framework.Assert;
+import org.openqa.selenium.WebElement;
 import support.TestBase;
+
+import static org.testng.Assert.assertTrue;
 
 /**
  * Created by ochesnokova on 4/18/16.
@@ -52,9 +55,6 @@ public class BigPicSteps extends TestBase{
     @Then("^I tap on Okay$")
     public void iTapOnOkay() throws Throwable {
         scr.bigPictureScreen.okay.click();
-
-
-
     }
 
     @And("^I verify number three$")
@@ -124,6 +124,13 @@ public class BigPicSteps extends TestBase{
     public void iTapOnTrack() throws Throwable {
         scr.trackBar.track.click();
 
+
+    }
+
+    @And("^I verify that I am on Big Picture screen$")
+    public void iVerifyThatIAmOnBigPictureScreen() throws Throwable {
+        WebElement desiredElement = scr.bigPictureScreen.howareyoufeelingoverall;
+        assertTrue(desiredElement.isDisplayed());
 
     }
 }

@@ -14,8 +14,3 @@ Feature: launch the MyRa
 
 
 
-
-
-
-
-

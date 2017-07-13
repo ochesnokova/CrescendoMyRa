@@ -1,6 +1,7 @@
 package step_definitions;
 
-import cucumber.api.PendingException;
+import constants.Constants;
+import constants.RandomDate;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -50,5 +51,40 @@ public class Common extends TestBase{
     @Then("^I tap on Labs Tile$")
     public void iTapOnLabsTile() throws Throwable {
         scr.welcomeScreen.labs.click();
+    }
+
+    @Then("^I tap on Yesterday$")
+    public void iTapOnYesterday() throws Throwable {
+        scr.bigPictureScreen.yesterday.click();
+    }
+
+    @Then("^I tap on Select Date$")
+    public void iTapOnSelectDate() throws Throwable {
+        scr.bigPictureScreen.selectDate.click();
+    }
+
+    @Then("^I verify that I am on Select a Date screen$")
+    public void iVerifyThatIAmOnSelectADateScreen() throws Throwable {
+        scr.selectDateScreen.selectaDate.isDisplayed();
+    }
+
+    @Then("^I tap on the Left arrow button$")
+    public void iTapOnTheLeftArrowButton() throws Throwable {
+        scr.bigPictureScreen.leftArrow.click();
+    }
+
+    @Then("^I tap on the Right arrow button$")
+    public void iTapOnTheRightArrowButton() throws Throwable {
+        scr.bigPictureScreen.rightArrow.click();
+    }
+
+    @And("^I pick any date and year$")
+    public void iPickAnyDateAndYear() throws Throwable {
+        RandomDate.setRandomDate();
+
+        scr.selectDateScreen.dataMonth.sendKeys(constants.Constants.months[RandomDate.getMonth()]);
+        scr.selectDateScreen.dataDate.sendKeys(String.valueOf(RandomDate.getDay()));
+        scr.selectDateScreen.dataYear.sendKeys(String.valueOf(RandomDate.getYear()));
+
     }
 }

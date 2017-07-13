@@ -7,10 +7,10 @@ Feature: As a user I'm able to report my fatigue
   Scenario: check numbers on Fatigue Page
     Given I tap on Fatigue Tile
     Then I tap on No Fatigue
-    And I verify number one No Fatigue
+    #And I verify number one No Fatigue
     Then I tap on A Bit Tired
-    And I verify number two Bit Tired
+    #And I verify number two Bit Tired
     Then I tap on Sluggish
-    And I verify number three Sluggish
+    #And I verify number three Sluggish
     Then I tap on Exhausted
-    And I verify number four Exhausted
+    #And I verify number four Exhausted

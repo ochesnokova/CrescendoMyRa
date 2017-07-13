@@ -31,6 +31,13 @@ public class FatigueScreen extends TestBase {
     public MobileElement numberOne;
 
 
+    @iOSFindBy(id = "SLUGGISH")
+    public MobileElement sluggish;
+
+    @iOSFindBy(id = "EXHAUSTED")
+    public MobileElement exhausted;
+
+
     public FatigueScreen() {
         System.out.println("Initializing FatigueScreen elements....");
         PageFactory.initElements(new AppiumFieldDecorator(driver, 20, TimeUnit.SECONDS), this);
