@@ -74,5 +74,10 @@ public class LandingSteps extends TestBase{
         // driver.findElement(By.ByClassName("UIAPickerWheel")).select(14);
     }
 
+    @And("^I turn on/off the Reminders$")
+    public void iTurnOffTheReminders() throws Throwable {
+        scr.meScreen.reminders.click();
+
+    }
 }
 

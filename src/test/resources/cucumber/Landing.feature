@@ -11,6 +11,7 @@ Feature: As a user I will be able to navigate between tracks
       And I verify "Average_time_with_morning" is present
       Then I tap on Me
       And I verify that I am on Me page
+      And I turn on/off the Reminders
       Then I tap on Resources
       And I verify that I am on Resources page
 

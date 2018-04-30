@@ -18,6 +18,10 @@ public class MeScreen extends TestBase {
     @iOSFindBy(id = "Reminder")
     public MobileElement reminder;
 
+    //@AndroidFindBy(id = "")
+    @iOSFindBy(id = "Reminders")
+    public MobileElement reminders;
+
     public MeScreen() {
         System.out.println("Initializing MeScreen elements....");
         PageFactory.initElements(new AppiumFieldDecorator(driver, 20, TimeUnit.SECONDS), this);
