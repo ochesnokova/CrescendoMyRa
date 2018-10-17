@@ -31,6 +31,9 @@ public class ScreenBase extends TestBase {
 
     public DailyFunctionalityScreen dailyFunctionalityScreen;
 
+    //public AddActivities addActivities;
+
+
     public MedicationScreen medicationScreen;
 
 
