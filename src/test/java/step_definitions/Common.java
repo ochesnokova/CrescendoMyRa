@@ -87,4 +87,9 @@ public class Common extends TestBase{
         scr.selectDateScreen.dataYear.sendKeys(String.valueOf(RandomDate.getYear()));
 
     }
+
+    @Given("^tap on allow notifications$")
+    public void tapOnAllowNotifications() throws Throwable{
+
+    }
 }

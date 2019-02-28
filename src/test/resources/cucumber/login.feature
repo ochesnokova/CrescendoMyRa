@@ -1,6 +1,7 @@
 Feature: launch the MyRa
 
-  Background: tap on welcome picture
+  Background: tap on "Allow" on notification prompt tap on welcome picture
+    Given tap on welcome picture
     Given tap on welcome picture
 
   @login

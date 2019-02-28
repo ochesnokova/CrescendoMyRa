@@ -10,7 +10,7 @@
 			<key>AutocorrectionType</key>
 			<string>No</string>
 			<key>DefaultValue</key>
-			<string>1.7</string>
+			<string>2.0.0</string>
 			<key>IsSecure</key>
 			<true/>
 			<key>Key</key>
@@ -32,7 +32,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MyRA™ is brought to you by Vectra®DA and Crescendo Bioscience, with help from physicans and people like you who are living with rheumatoid arthritis.</string>
+			<string>myVectra™ is brought to you by Vectra® and Crescendo Bioscience, with help from physicans and people like you who are living with rheumatoid arthritis.</string>
 			<key>Title</key>
 			<string></string>
 			<key>Type</key>
@@ -40,7 +40,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright © 2014 Crescendo Bioscience Inc. All rights reserved.</string>
+			<string>Copyright © 2018 Crescendo Bioscience Inc. All rights reserved.</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

@@ -20,29 +20,29 @@ public class WelcomeScreen extends TestBase {
     public MobileElement welcomePicture;
 
     @AndroidFindBy(id = "track_list_big_pic")
-    @iOSFindBy(id = "Big Picture")
+    @iOSFindBy(id = "big picture on")
     public MobileElement bigPictureTile;
 
-    @iOSFindBy(id = "Fatigue")
+    @iOSFindBy(id = "01 fatigue on")
     public MobileElement fatigueTile;
 
 
-    @iOSFindBy(id = "Joint Pain")
+    @iOSFindBy(id = "joint pain on")
     public MobileElement jointPainTile;
 
 
-    @iOSFindBy(id = "Morning Stiffness")
+    @iOSFindBy(id = "ms on")
     public MobileElement morningStiffness;
 
 
-    @iOSFindBy(id = "Daily Functionality")
+    @iOSFindBy(id = "df on")
     public MobileElement dailyFunctionality;
 
 
-    @iOSFindBy(id = "Medications")
+    @iOSFindBy(id = "meds on")
     public MobileElement medications;
 
-    @iOSFindBy(id = "Labs")
+    @iOSFindBy(id = "labs on")
     public MobileElement labs;
 
 

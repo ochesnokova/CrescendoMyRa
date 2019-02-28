@@ -1,6 +1,7 @@
 Feature: As a user I'm able to report my overall felling
 
   Background: tap on welcome picture
+    Given tap on allow notifications
   Given tap on welcome picture
 
   @BigPicture

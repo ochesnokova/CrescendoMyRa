@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class MainMenuScreen extends TestBase{
 
     @AndroidFindBy(name = "track_list_big_pic")
-    @iOSFindBy(name = "BigPictureScreen")
+    @iOSFindBy(name = "big picture on")
     public MobileElement bigPicture;
 
 
